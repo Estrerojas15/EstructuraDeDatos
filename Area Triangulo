@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+void area(float ERM,float H);
+int main()
+{ float ERM, H;
+	cout<<"Ingrese la base del tringulo: ";
+	cin>>ERM;
+	cout<<"Ingrese la altura del tringulo: ";
+	cin>>H;
+	area(ERM,H);
+	system ("pause");
+	return 0;
+}
+
+void area(float ERM,float H)
+{float M;
+	M=(ERM*H)/2;
+cout << "El area del triangulo es: " << M << endl;
+}
