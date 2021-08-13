@@ -1,0 +1,25 @@
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int EncontrarMenor(int x, int y);
+
+int main()
+{ int x,y;
+
+	cout<<"Digite dos numeros para encontar el menor: ";
+	cin>>x>>y;
+
+	cout<<"El menor es: "<< EncontrarMenor(x,y)<<endl;
+
+	system ("pause");
+	return 0;
+}
+
+int EncontrarMenor(int x, int y){
+	int M;
+	if (x>y){M=y;}
+	else{M=x;}
+	return M;
+}
